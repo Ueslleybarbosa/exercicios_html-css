@@ -1,17 +1,33 @@
-# 📋 Formulário de Registro
+# Aprendendo Checkbox e Radios
 
-Este é um exemplo de formulário HTML que desenvolvi para aprender e praticar a validação de campos de email e telefone, além de explorar a funcionalidade do atributo `pattern`.
+Este projeto foi criado para aprender sobre a implementação de checkboxes e radio buttons em HTML. Durante o aprendizado, foram abordados conceitos básicos de formulários HTML e como utilizar esses elementos de input para criar opções interativas para o usuário.
 
-## 🎓 Aprendizado
+## Descrição
 
-### 📧 Email
-- **Campo de Email:** Usei o campo `input` com o tipo `email` para garantir que os usuários insiram um endereço de email válido.
-- **Atributo `required`:** Tornei o campo obrigatório para garantir que nenhuma submissão seja feita sem um email válido.
+O código abaixo apresenta os trechos específicos utilizados para criar radio buttons e checkboxes em um formulário simples. Através deste exemplo, foi possível entender como definir radio buttons para permitir a seleção única entre opções, e checkboxes para permitir múltiplas seleções.
 
-### 📞 Telefone
-- **Campo de Telefone:** Criei um campo `input` com o tipo `tel` para números de telefone.
-- **Formato Brasileiro:** Adaptei o formato para seguir o padrão brasileiro, incluindo o DDD e o dígito 9 adicional.
-- **Uso do `pattern`:** Utilizei a expressão regular para validar o formato do número de telefone, garantindo que siga o padrão estabelecido.
+```html
+<!-- Trecho de Radio Buttons -->
+<fieldset>
+    <legend>Qual é o seu sexo:</legend>
 
-### 🔍 Atributo `pattern`
-- **Expressão Regular (Regex):** Aprendi a usar expressões regulares para validar padrões específicos de entrada de dados. No caso, para números de telefone no formato brasileiro.
+    <input type="radio" name="sexo" id="masculino">
+    <label for="masculino">Homem</label>
+
+    <input type="radio" name="sexo" id="feminino" checked>
+    <label for="feminino">Mulher</label>
+</fieldset>
+
+<!-- Trecho de Checkboxes -->
+<fieldset>
+    <legend>Qual é o seu esporte favorito:</legend>
+
+    <input type="checkbox" name="basquete" id="basquete">
+    <label for="basquete">Basquete</label>
+
+    <input type="checkbox" name="futebol" id="futebol" checked>
+    <label for="futebol">Futebol</label>
+
+    <input type="checkbox" name="natacao" id="natacao">
+    <label for="natacao">Natação</label>
+</fieldset>
