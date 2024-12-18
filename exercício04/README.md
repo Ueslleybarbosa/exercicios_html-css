@@ -1,16 +1,17 @@
-## Descrição
-Este projeto demonstra o uso de campos numéricos e de data/hora em formulários HTML, além de algumas práticas recomendadas de segurança. Abaixo estão os conceitos e funcionalidades aprendidos. 📚
+# 📋 Formulário de Registro
 
-## Conceitos de Números em Formulários
+Este é um exemplo de formulário HTML que desenvolvi para aprender e praticar a validação de campos de email e telefone, além de explorar a funcionalidade do atributo `pattern`.
 
-1. **Campos Numéricos**:
-   - Utilizar `<input type="number">` para criar campos onde os usuários podem inserir números. 🔢
-   - Atributos como `min`, `max` e `step` são úteis para definir os valores mínimo, máximo e o incremento dos números. 📏
+## 🎓 Aprendizado
 
-2. **Campos de Data e Hora**:
-   - Usar `<input type="date">` para campos de seleção de data e `<input type="time">` para campos de seleção de hora. 📅 ⏰
-   - Valores padrão ou placeholders podem ser definidos diretamente no HTML, mas o ideal é usar JavaScript para definir esses valores dinamicamente. 💡
+### 📧 Email
+- **Campo de Email:** Usei o campo `input` com o tipo `email` para garantir que os usuários insiram um endereço de email válido.
+- **Atributo `required`:** Tornei o campo obrigatório para garantir que nenhuma submissão seja feita sem um email válido.
 
-### Usar JavaScript para Valores Dinâmicos
+### 📞 Telefone
+- **Campo de Telefone:** Criei um campo `input` com o tipo `tel` para números de telefone.
+- **Formato Brasileiro:** Adaptei o formato para seguir o padrão brasileiro, incluindo o DDD e o dígito 9 adicional.
+- **Uso do `pattern`:** Utilizei a expressão regular para validar o formato do número de telefone, garantindo que siga o padrão estabelecido.
 
-Definir o valor atual de data ou hora dinamicamente com JavaScript é mais eficiente e mantém seu formulário atualizado automaticamente. 🚀
+### 🔍 Atributo `pattern`
+- **Expressão Regular (Regex):** Aprendi a usar expressões regulares para validar padrões específicos de entrada de dados. No caso, para números de telefone no formato brasileiro.
