@@ -1,19 +1,19 @@
-# 📋 Formulários HTML
+# Mídia Query
 
-## Métodos de Envio de Formulários
+Este projeto demonstra o uso de media queries em HTML e CSS para adaptar a aparência da página para diferentes dispositivos.
 
-### Método GET
-🔍 O método GET envia os parâmetros do formulário na URL, o que pode ser arriscado para dados sensíveis porque essas informações ficam visíveis na barra de endereços do navegador e podem ser facilmente armazenadas nos logs do servidor ou no histórico do navegador.
+## Explicação do Media Query
 
-### Método POST
-🔒 O método POST envia os dados no corpo da requisição HTTP, e eles não aparecem na URL. Isso oferece uma camada extra de segurança para dados sensíveis. No entanto, as informações ainda podem ser interceptadas se a conexão não for segura (por exemplo, sem HTTPS).
+### Tela (screen)
+A folha de estilo `tela.style.css` é usada quando a página é visualizada em uma tela, como em um monitor de computador ou em um dispositivo móvel. Algumas configurações específicas incluem:
+- Alteração da fonte padrão para 'Courier New'.
+- Escondendo o menu.
+- Definindo a largura do artigo como 100% da largura da janela de visualização.
 
-## 🛡️ Considerações de Segurança
-🔐 Mesmo usando POST, as informações podem ser vistas nos headers da requisição HTTP. Portanto, é essencial garantir que a conexão seja segura usando HTTPS para criptografar os dados durante a transmissão. Isso protege as informações contra interceptações maliciosas.
+### Impressão (print)
+A folha de estilo `impressora.style.css` é usada quando a página é impressa. Algumas configurações específicas incluem:
+- Alteração da fonte padrão para Arial.
+- Ajustes no cabeçalho e no menu para melhorar a aparência do documento impresso.
+- Definindo a largura do artigo como 50% da largura da janela de visualização e centralizando-o.
 
-### Resumo
-- **GET**: Parâmetros visíveis na URL. 🚫 Não recomendado para dados sensíveis.
-- **POST**: Dados enviados no corpo da requisição, ✅ mais seguro para dados sensíveis, mas deve ser usado com HTTPS para criptografia.
-
-### 🚀 Limite do Método GET
-O método GET aceita até 3.000 bytes.
+Essas mídias queries permitem que o conteúdo seja adaptado de forma otimizada tanto para visualização em telas quanto para impressão, proporcionando uma melhor experiência para o usuário dependendo do meio em que ele está acessando o conteúdo.
